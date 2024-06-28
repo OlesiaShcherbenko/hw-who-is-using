@@ -20,13 +20,6 @@ body {
   color: #000;
 }
 
-/* input,
-button,
-textarea,
-select {
-  font-family: inherit;
-} */
-
 a,
 button {
   cursor: pointer;
@@ -45,7 +38,6 @@ CONTAINER
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +56,6 @@ CONTAINER
   display: flex;
   column-gap: 30px;
   margin: 0 auto;
-  border: 4px solid yellow;
 }
 
 .container-aside {
@@ -76,8 +67,6 @@ CONTAINER
   max-width: 785px;
   width: 100%;
   margin: 0 auto;
-  border: 3px solid pink;
-  /* position: relative; */
 }
 
 /* 
@@ -85,7 +74,6 @@ HEADER
 */
 
 .header {
-  border: 2px solid green;
   background: #fff;
   position: fixed;
   top: 0;
@@ -124,7 +112,6 @@ MAIN SECTION
 */
 
 .main {
-  border: 4px solid olivedrab;
   margin-top: 150px;
   position: relative;
 }
@@ -133,22 +120,13 @@ MAIN SECTION
 SIDEBAR
 */
 
-
-
 .side-bar {
-  /* border: 1px solid blue; */
   max-width: 385px;
   height: 100%;
   padding: 10px;
-  border: 1px solid blue;
   position: sticky;
-  top: 0;
+  top: 85px;
 }
-
-/* .side-bar__items {
-    position: sticky;
-  top: 0;
-} */
 
 .side-bar__item {
   font-family: "Francois One", sans-serif;
@@ -156,9 +134,7 @@ SIDEBAR
   font-style: normal;
   font-size: 36px;
   text-transform: uppercase;
-  /* border: 1px solid red; */
   border-bottom: 1px solid #bdbdbd;
-  /* position: sticky; */
   list-style: none;
 }
 
@@ -174,15 +150,16 @@ SIDEBAR
 ARTICLE
 */
 
-/* .article {
-  margin: 70px auto;
-  position: relative;
-} */
-
 .article {
-  border: 2px solid pink;
   max-width: 785px;
   width: 100%;
+}
+
+.chapter__divider {
+  height: 8px;
+  width: 100px;
+  background-color: #000;
+  margin-bottom: 28px;
 }
 
 .chapter__title {
@@ -220,10 +197,8 @@ I should revert it to 20px. */
   line-height: 48px;
 }
 
-/* Selector .chapter works, but :not(:last-of-type) doesn't. Why?  */
 .chapter {
   margin-bottom: 70px;
-  /* border: 2px solid orange; */
 }
 
 .chapher__description p:not(:last-of-type) {
@@ -255,9 +230,8 @@ mark {
 }
 
 .image {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 150px;
   right: 0;
   z-index: -1;
-  border: 1px solid red;
 }
